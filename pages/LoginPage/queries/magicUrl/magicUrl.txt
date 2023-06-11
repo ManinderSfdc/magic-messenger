@@ -1,0 +1,7 @@
+{{
+{
+	"email": loginEmailInput.text,
+	"userId": "unique()",
+	"url": "https://app.appsmith.com/app/magic-messenger/redirectpage-648345c6a89c1b088d7a1d3d"
+}
+}}

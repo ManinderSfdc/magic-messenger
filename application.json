@@ -1,0 +1,45 @@
+{
+  "pages": [
+    {
+      "id": "dashboard",
+      "isDefault": true
+    },
+    {
+      "id": "LoginPage",
+      "isDefault": false
+    },
+    {
+      "id": "redirectPage",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": false
+    }
+  },
+  "color": "#C7F3E3",
+  "icon": "chat",
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": true
+  },
+  "isManualUpdate": false,
+  "deleted": false
+}

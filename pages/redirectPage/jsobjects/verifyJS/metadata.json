@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "verifyJS",
+    "pageId": "redirectPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "redirectPage_verifyJS",
+  "deleted": false,
+  "gitSyncId": "648165a5a89c1b088d7a0118_64834c3a5ccd0d13e4f8e57b"
+}

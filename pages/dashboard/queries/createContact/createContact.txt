@@ -1,0 +1,13 @@
+{{
+	{	
+		"documentId": "unique()",
+  	"data": {
+							"Name": inpName.text,
+							"Gender": inpGender.text,
+							"DOB": inpDob.text,
+							"Phone": inpPhone.text,
+							"Email": inpEmail.text,
+							"Address": inpAddress.text
+						}
+	}
+}}

@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "welcome",
+        "value": "`Welcome to our group! Here's a link to the new member paperwork:\n`"
+      },
+      {
+        "name": "renewal",
+        "value": "`A friendly reminder that your membership is about to expire. Please renew your subscriptions at:\n`"
+      },
+      {
+        "name": "thankyou",
+        "value": "`Thank you for supporting our group! Your membership has been renewed.\n`"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "dashboard_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6261b50800cba01cd02f2567_6266a63100cba01cd0300ab6"
+}

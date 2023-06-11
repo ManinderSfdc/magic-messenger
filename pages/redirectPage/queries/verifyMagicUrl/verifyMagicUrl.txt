@@ -1,0 +1,6 @@
+{{
+{
+	"userId": appsmith.URL.queryParams.userId,
+	"secret": appsmith.URL.queryParams.secret
+}
+}}
