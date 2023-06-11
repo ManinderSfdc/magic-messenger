@@ -1780,7 +1780,7 @@
                                   "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
-                                  "isVisible": true,
+                                  "isVisible": false,
                                   "isDisabled": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
