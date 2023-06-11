@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1120,
+          "bottomRow": 1160,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -1334,7 +1334,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.8a93874870bccee17fbcd02b950c3bcd.svg",
               "topRow": 17,
-              "bottomRow": 112,
+              "bottomRow": 116,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -1618,7 +1618,7 @@
                           "children": [
                             {
                               "boxShadow": "none",
-                              "multiRowSelection": false,
+                              "multiRowSelection": true,
                               "widgetName": "Table1",
                               "columnOrder": [
                                 "Name",
@@ -2091,7 +2091,7 @@
                               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
                               "mobileBottomRow": 6,
                               "widgetName": "IconButton2",
-                              "onClick": "{{getContacts.run()}}",
+                              "onClick": "{{getContacts.run().then(() => {\n  showAlert('Contacts Refresh From Database Completed', 'success');\n}).catch(() => {\n  showAlert('Contact Refresh encountered an error.', 'error');\n});}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "displayName": "Icon button",
                               "iconSVG": "/static/media/icon.80fc7466c0d7181ec0271de7fda795ec.svg",
@@ -2301,15 +2301,15 @@
                               "onClick": "{{navigateTo(txt_url.text, {},'NEW_WINDOW')}}",
                               "dynamicPropertyPathList": [],
                               "buttonColor": "#03B365",
-                              "topRow": 58,
-                              "bottomRow": 64,
+                              "topRow": 62,
+                              "bottomRow": 67,
                               "type": "FORM_BUTTON_WIDGET",
                               "dynamicTriggerPathList": [
                                 {
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 25,
+                              "leftColumn": 36,
                               "dynamicBindingPathList": [],
                               "text": "Send to WhatsApp",
                               "labelTextSize": "0.875rem",
@@ -2545,8 +2545,8 @@
                               ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
-                              "topRow": 49,
-                              "bottomRow": 57,
+                              "topRow": 48,
+                              "bottomRow": 67,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
@@ -2566,7 +2566,7 @@
                               "text": "https://api.whatsapp.com/send?phone={{Table1.selectedRow.Phone?.toString().replace(/[()-]/g,'')}}&text={{encodeURI(Input1.text)}}",
                               "key": "zkf657ya1m",
                               "labelTextSize": "0.875rem",
-                              "rightColumn": 61,
+                              "rightColumn": 35,
                               "backgroundColor": "#F6F7F8",
                               "disableLink": true,
                               "textAlign": "LEFT",
@@ -2711,6 +2711,47 @@
                               },
                               "borderRadius": "0.375rem",
                               "buttonVariant": "PRIMARY"
+                            },
+                            {
+                              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                              "mobileBottomRow": 70,
+                              "widgetName": "Image3",
+                              "displayName": "Image",
+                              "iconSVG": "/static/media/icon.30c8cbd442cce232b01ba2d434c53a53.svg",
+                              "topRow": 48,
+                              "bottomRow": 62,
+                              "parentRowSpace": 10,
+                              "type": "IMAGE_WIDGET",
+                              "hideCard": false,
+                              "mobileRightColumn": 14,
+                              "animateLoading": true,
+                              "parentColumnSpace": 7.2436676025390625,
+                              "dynamicTriggerPathList": [],
+                              "imageShape": "RECTANGLE",
+                              "leftColumn": 36,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "image"
+                                }
+                              ],
+                              "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+                              "key": "dymwuyew5a",
+                              "image": "{{getQrCode.data}}",
+                              "isDeprecated": false,
+                              "rightColumn": 61,
+                              "objectFit": "cover",
+                              "widgetId": "hvm7mgnjdx",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "qjojrepd92",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "mobileTopRow": 58,
+                              "maxZoomLevel": 1,
+                              "enableDownload": false,
+                              "borderRadius": "0px",
+                              "mobileLeftColumn": 2,
+                              "enableRotation": false
                             }
                           ]
                         }
@@ -2910,7 +2951,7 @@
               "widgetId": "xiuuws1ath",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "{{appsmith.store?.verified ? 'Authenticated':'Unauthenticated'}}",
-              "shouldShowTabs": false,
+              "shouldShowTabs": true,
               "minWidth": 450,
               "tabsObj": {
                 "tab1": {
@@ -2941,7 +2982,7 @@
               "borderRadius": "0.375rem",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 32,
+              "originalBottomRow": 116,
               "minDynamicHeight": 15
             }
           ]
@@ -2965,6 +3006,18 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "dashboard_getQrCode",
+              "name": "getQrCode",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "txt_url.text"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
