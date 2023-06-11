@@ -128,7 +128,7 @@
               "id": "redirectPage_verifyJS.verifySession",
               "name": "verifyJS.verifySession",
               "collectionId": "redirectPage_verifyJS",
-              "confirmBeforeExecute": true,
+              "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  let response;\n  try {\n    response = await verifyMagicUrl.run();\n  } catch (error) {\n    showAlert('Error while logging in. Contact the creator with this info.' + response?.body?.message + ':' + response?.body?.type, 'error');\n    return;\n  }\n  console.log('response:' + response);\n  if (response?.userId) {\n    await storeValue('verified', true);\n    navigateTo(\"dashboard\");\n  } else {\n    showAlert('Error while logging in. Contact the app creator.', 'error');\n  }\n}"

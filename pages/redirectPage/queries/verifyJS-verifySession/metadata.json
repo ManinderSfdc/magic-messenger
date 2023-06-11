@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "userSetOnLoad": true,
-    "confirmBeforeExecute": true,
+    "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
     "createdAt": "2023-06-09T16:00:24Z"
