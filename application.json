@@ -2,11 +2,11 @@
   "pages": [
     {
       "id": "dashboard",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "LoginPage",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "redirectPage",

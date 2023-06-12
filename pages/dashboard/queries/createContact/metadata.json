@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{\n\t{\t\n\t\t\"documentId\": \"unique()\",\n  \t\"data\": {\n\t\t\t\t\t\t\t\"Name\": inpName.text,\n\t\t\t\t\t\t\t\"Gender\": inpGender.text,\n\t\t\t\t\t\t\t\"DOB\": inpDob.text,\n\t\t\t\t\t\t\t\"Phone\": inpPhone.text,\n\t\t\t\t\t\t\t\"Email\": inpEmail.text,\n\t\t\t\t\t\t\t\"Address\": inpAddress.text\n\t\t\t\t\t\t}\n\t}\n}}",
+      "body": "{{\n\t{\t\n\t\t\"documentId\": \"unique()\",\n  \t\"data\": {\n\t\t\t\t\t\t\t\"Name\": inpName.text,\n\t\t\t\t\t\t\t\"Gender\": inpGender.text,\n\t\t\t\t\t\t\t\"DOB\": inpDob.formattedDate,\n\t\t\t\t\t\t\t\"Phone\": inpPhone.text,\n\t\t\t\t\t\t\t\"Email\": inpEmail.text,\n\t\t\t\t\t\t\t\"Address\": inpAddress.text,\n\t\t\t\t\t\t\t\t\"Image\": ImageUrl.text\n\t\t\t\t\t\t}\n\t}\n}}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -50,7 +50,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "\n\t{\t\n\t\t\"documentId\": \"unique()\",\n  \t\"data\": {\n\t\t\t\t\t\t\t\"Name\": inpName.text,\n\t\t\t\t\t\t\t\"Gender\": inpGender.text,\n\t\t\t\t\t\t\t\"DOB\": inpDob.text,\n\t\t\t\t\t\t\t\"Phone\": inpPhone.text,\n\t\t\t\t\t\t\t\"Email\": inpEmail.text,\n\t\t\t\t\t\t\t\"Address\": inpAddress.text\n\t\t\t\t\t\t}\n\t}\n"
+      "\n\t{\t\n\t\t\"documentId\": \"unique()\",\n  \t\"data\": {\n\t\t\t\t\t\t\t\"Name\": inpName.text,\n\t\t\t\t\t\t\t\"Gender\": inpGender.text,\n\t\t\t\t\t\t\t\"DOB\": inpDob.formattedDate,\n\t\t\t\t\t\t\t\"Phone\": inpPhone.text,\n\t\t\t\t\t\t\t\"Email\": inpEmail.text,\n\t\t\t\t\t\t\t\"Address\": inpAddress.text,\n\t\t\t\t\t\t\t\t\"Image\": ImageUrl.text\n\t\t\t\t\t\t}\n\t}\n"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

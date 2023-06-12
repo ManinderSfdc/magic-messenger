@@ -4,10 +4,11 @@
   	"data": {
 							"Name": inpName.text,
 							"Gender": inpGender.text,
-							"DOB": inpDob.text,
+							"DOB": inpDob.formattedDate,
 							"Phone": inpPhone.text,
 							"Email": inpEmail.text,
-							"Address": inpAddress.text
+							"Address": inpAddress.text,
+								"Image": ImageUrl.text
 						}
 	}
 }}
